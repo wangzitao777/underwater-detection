@@ -14,21 +14,30 @@ This project is designed to provide a YOLOv8 based object dectection method for 
 
 Our experiments were performed on a Ubuntu 20.04 personal computer with GTX1660 and 12th Intel i5-core. It's recommended that install our project via pip.
 1. Clone the YOLOv8 project:
-
-    git clone git@github.com:ultralytics/ultralytics.git
-    
+```bash
+git clone git@github.com:ultralytics/ultralytics.git
+```
 2. Create a new environment and install the liberaries:
-
-    python -m venv underwater_detection
-    
-    pip install -r requirements.txt
-
+```bash
+python -m venv underwater_detection    
+pip install -r requirements.txt
+```
 ## Preparation & Usage
 
 1. Prepare your dataset. Several public FLS image datasets are given in additional information.
 
-2. 
-4. [Add any additional instructions or guidelines]
+2. Directly use Command Line Interface (CLI) with a yolo command:
+```bash
+yolo predict model=demo/demo.pt source='[Your Picture]'
+```
+Or train your own model:
+```bash
+yolo task=detect mode=train model=yolov8n.yaml batch=16 epoch=300 workers=16 device=0 optimizer='Adam' lr0=1e-3 lrf=1e-5
+```
+More information on YOLO can be found in [YOLOv8](https://github.com/ultralytics/ultralytics)
+
+3. A demo result is shown:
+![image](https://github.com/wangzitao777/underwater-detection/blob/main/demo/demo.jpg)
 
 ## Contributing
 
@@ -40,25 +49,14 @@ We welcome contributions from the community! If you'd like to contribute to the 
 4. Push your changes to your forked repository
 5. Submit a pull request with a clear description of your changes
 
-## License
-
-This project is licensed under the [name of the license]. Please see the [LICENSE](LICENSE) file for more details.
-
-## Acknowledgements
-
-- [Acknowledge any contributors or resources that have been used]
-- [Give credit to any external libraries, frameworks, or resources]
-
 ## Contact
 
-If you have any questions, suggestions, or feedback, please feel free to reach out to us at [email address or other contact information]. We'd love to hear from you!
+If you have any questions, suggestions, or feedback, please feel free to reach out to us at wangzitao@sjtu.edu.cn. We'd love to hear from you!
 
 ## Additional Information
 
-[Include any additional information, such as project status, future plans, or relevant links]
+Several dataset:
 
-[Optional: Add badges, such as build status or version number]
 
-[Optional: Include a table of contents for easy navigation]
 
 Thank you for using our project!
