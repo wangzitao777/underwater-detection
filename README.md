@@ -23,11 +23,11 @@ Our experiments were performed on a Ubuntu 20.04 personal computer with GTX1660 
     
     pip install -r requirements.txt
 
-## Usage
+## Preparation & Usage
 
-1. Prepare your dataset
+1. Prepare your dataset. Several public FLS image datasets are given in additional information.
 
-3. [Include any relevant screenshots or gifs to demonstrate usage]
+2. 
 4. [Add any additional instructions or guidelines]
 
 ## Contributing
