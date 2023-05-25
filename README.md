@@ -8,19 +8,27 @@ This project is designed to provide a YOLOv8 based object dectection method for 
 
 - A threshold-adaptive judgment criterion is proposed to limit the influences of artifacts. And contrast limited adaptive histogram equalization (CLAHE) is used to improve the contrast of FLS images and make them easier to interpret. In addition, a wiener filter is applied further to reduce the effects of noise and improve the overall image quality.
 - To further suppress irrelevant noise and extract useful features from FLS images, convolutional block attention module (CBAM) is added to the network head while not increasing computational complexity.
-- [Include any additional features]
+- Sufficient experiments are conducted to ensure the reliability of the results. And the real-time performance of the model has been verified on hardware.
 
 ## Installation
 
-1. [Provide step-by-step installation instructions]
-2. [Include any dependencies or prerequisites]
-3. [Add any additional configuration steps]
+Our experiments were performed on a Ubuntu 20.04 personal computer with GTX1660 and 12th Intel i5-core. It's recommended that install our project via pip.
+1. Clone the YOLOv8 project:
+
+    git clone git@github.com:ultralytics/ultralytics.git
+    
+2. Create a new environment and install the liberaries:
+
+    python -m venv underwater_detection
+    
+    pip install -r requirements.txt
 
 ## Usage
 
-1. [Explain how to use the project or provide code examples]
-2. [Include any relevant screenshots or gifs to demonstrate usage]
-3. [Add any additional instructions or guidelines]
+1. Prepare your dataset
+
+3. [Include any relevant screenshots or gifs to demonstrate usage]
+4. [Add any additional instructions or guidelines]
 
 ## Contributing
 
